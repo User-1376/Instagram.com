@@ -6,13 +6,13 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
     try {
         // Enviar los datos al servidor backend (Node.js/SQLite)
-        const response = await fetch('http://localhost:3000/api/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ username, password })
-        });
+        const response = await fetch('https://tu-servidor-en-la-nube.com/api/login', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ username, password })
+});
 
         if (response.ok) {
             console.log('Datos guardados correctamente en la base de datos.');
