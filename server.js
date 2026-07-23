@@ -3,7 +3,7 @@ const sqlite3 = require('sqlite3').verbose();
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middlewares
 app.use(express.json());
@@ -42,5 +42,5 @@ app.post('/api/login', (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en https://github.com/User-1376/Instagram.com.git`);
+    console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
